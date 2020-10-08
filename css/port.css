@@ -984,6 +984,8 @@ background: linear-gradient(to right, #4CA1AF, #2C3E50); /* W3C, IE 10+/ Edge, F
 
 .outerPar * span {
 	display: inline-block;
+	color: white;
+	mix-blend-mode: screen;
 }
 
 .outerPar2 * span {
@@ -1010,8 +1012,8 @@ background: linear-gradient(to right, #4CA1AF, #2C3E50); /* W3C, IE 10+/ Edge, F
 	box-shadow: 0 20px 70px -20px rgba(black, .7), 0 50px 100px 0 rgba(black, .25);
 	position: relative;
 	transform-style: preserve-3d;
-	-webkit-transform: perspective(400px);
-	transform: perspective(400px);
+	-webkit-transform: perspective(200px);
+	transform: perspective(200px);
 	transition: all .75s ease-in-out;
 }
 
