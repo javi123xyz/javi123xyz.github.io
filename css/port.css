@@ -436,7 +436,7 @@ a:visited {
 }
 
 
-h1, h2 {
+h1 {
 	font-family: "Cooper Black", 'Lobster', cursive;
 	transition: all 1.0s ease-in-out;
 	text-shadow: 2px 2px 3px red;
@@ -580,6 +580,31 @@ h1, h2 {
     color: goldenrod;
 }
 
+.button3{
+	background-color: midnightblue;
+    color: goldenrod;
+	position: relative;
+	display: block;
+    padding: .5em;
+	margin: 2em auto;
+    border: none;
+    font-size: 1.25em;
+	font-family: 'Poppins', 'Raleway', sans-serif;
+    cursor: pointer;
+    border-radius: 70px;
+	transform: scale(1.5);
+	transition: all 0.5s linear;
+	text-align: center;
+}
+
+.button3:hover {
+	box-shadow: -.25em .25em .5px rgba(0,0,0,0.25);
+	transform: scale(1.50);
+	display: block;
+	transition: all 0.5s ease-in-out;
+	margin: 2em auto;
+}
+
 .button, .button2 {
     position: relative;
 	display: inline-flex;
@@ -600,7 +625,7 @@ h1, h2 {
         pointer-events: none;
 }
 
-.button:hover, .button2:hover, .play-btn:hover {
+.button:hover, .button2:hover, {
 	box-shadow: -.25em .75em .5px rgba(0,0,0,0.25);
 	transform: scale(1.20);
 	transition: all 0.5s ease;
@@ -1295,10 +1320,30 @@ p.bigSmall {
 	background-color: aliceblue;
 }
 
-h3 {
-	font-family: "Cooper Black", 'Lobster', cursive;
-	transition: all 1.0s ease-in-out;
-	text-shadow: 2px 2px 3px red;
-	font-size: 2.25em;
+
+
+.blog > h2, h3, h4 {
+	font-family: Baskerville, Palatino Linotype, Palatino, Century Schoolbook L, Times New Roman, serif;
+	color: white;
+	text-shadow: 2px 2px 3px black;
 	color: antiquewhite;
 }
+
+.blog > h2 {
+	font-size: 2.5em;
+}
+
+
+.blogText
+{
+	width: 75vw;
+	height: auto;
+	text-align: left;
+	background-color: white;
+	font-size: 1.25em;
+	padding: 1em;
+	margin: 1.5em auto;
+	font-family: Segoe, Segoe UI, DejaVu Sans, Trebuchet MS, Verdana," sans-serif";
+}
+
+
