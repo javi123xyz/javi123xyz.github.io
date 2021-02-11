@@ -3,78 +3,52 @@
 <head>
 		<meta charset="utf-8">
 		<title> Javier Solis - Personal Portfolio </title>
-		<link href="../../css/port.css" rel="stylesheet" type="text/css"/>
 		<meta name="keywords" content="HTML, CSS, Personal Portfolio, Javier Solis, Design, Eternal Oblivion, Flamez">
+		<link href="../../css/port.css" rel="stylesheet" type="text/css"/>
 		<meta name="description" content="Javier Solis - personal creative portfolio">
 		<meta name="author" content="Javier Solis">
 		<meta name="viewport" content="width=1440">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-		<link href="https://fonts.googleapis.com/css?family=Montserrat|Poppins|Raleway" rel="stylesheet">
-		<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-		<script defer src="javascript/parallax.js-1.5.0/parallax.js"></script>
-		<script defer src="https://gijsroge.github.io/tilt.js/js/prism.js"></script>
-		<script defer src="https://gijsroge.github.io/tilt.js/js/jquery.slim.min.js"></script>
-		<script defer src="https://unpkg.com/tilt.js@1.1.21/dest/tilt.jquery.min.js"></script>
-		<script defer src="https://gijsroge.github.io/tilt.js/dest/app.js"></script>
-		<!-- ****** faviconit.com favicons ****** -->
-		<link rel="shortcut icon" href="icon/favicon.ico">
-		<link rel="icon" sizes="16x16 32x32 64x64" href="icon/favicon.ico">
-		<link rel="icon" type="image/png" sizes="196x196" href="icon/favicon-192.png">
-		<link rel="icon" type="image/png" sizes="160x160" href="icon/favicon-160.png">
-		<link rel="icon" type="image/png" sizes="96x96" href="icon/favicon-96.png">
-		<link rel="icon" type="image/png" sizes="64x64" href="icon/favicon-64.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16.png">
-		<link rel="apple-touch-icon" href="icon/favicon-57.png">
-		<link rel="apple-touch-icon" sizes="114x114" href="icon/favicon-114.png">
-		<link rel="apple-touch-icon" sizes="72x72" href="icon/favicon-72.png">
-		<link rel="apple-touch-icon" sizes="144x144" href="icon/favicon-144.png">
-		<link rel="apple-touch-icon" sizes="60x60" href="icon/favicon-60.png">
-		<link rel="apple-touch-icon" sizes="120x120" href="icon/favicon-120.png">
-		<link rel="apple-touch-icon" sizes="76x76" href="icon/favicon-76.png">
-		<link rel="apple-touch-icon" sizes="152x152" href="icon/favicon-152.png">
-		<link rel="apple-touch-icon" sizes="180x180" href="icon/favicon-180.png">
-		
-		<meta name="msapplication-TileColor" content="#FFFFFF">
-		<meta name="msapplication-TileImage" content="icon/favicon-144.png">
-		<meta name="msapplication-config" content="icon/browserconfig.xml">
 		<script src="https://cdn.jsdelivr.net/gh/aframevr/aframe@1c2407b26c61958baa93967b5412487cd94b290b/dist/aframe-master.min.js"></script>
 		<script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
-		<script src="//cdn.rawgit.com/donmccurdy/aframe-extras/v6.0.0/dist/aframe-extras.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
 </head>
 <body style="margin: 0px; overflow: hidden;">
-	<a-scene embedded vr-mode-ui="enabled: false" arjs="sourceType: webcam; debugUIEnabled: true; detectionMode: mono_and_matrix; matrixCodeType: 3x3;">
+<div class="arjs-loader">
+		<div>Loading, please wait...</div>
+	</div>
+	<a-scene embedded vr-mode-ui="enabled: false" arjs="sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; 
+	debugUIEnabled: true; detectionMode: mono_and_matrix; matrixCodeType: 3x3;" stats>
 		<!--Preloads all assets to be used in scene-->
-		<a-assets>
+		<a-assets timeout="10000">
 			<a-asset-item id="RawGardenBox" src="Models/rGbox2GLTF.gltf"></a-asset-item>
 			<a-asset-item id="RawGardenInfo" src="Models/RawGardenInfo.gltf"></a-asset-item>
-			<a-asset-item id="Carl" src="Models/CarlWheezerDancing.gltf"></a-asset-item>
+			<a-asset-item id="Wheezer" src="Models/CarlWheezerDancing.gltf"></a-asset-item>
 			<a-asset-item id="CJ" src="Models/CJDancing.gltf"></a-asset-item>
 			<a-asset-item id="Lighter" src="Models/AnimatedLighter.gltf"></a-asset-item>
-       		<a-asset-item id="cube-obj" src="Models/obj/cube/cube postRasta.obj"></a-asset-item>
-            <a-asset-item id="cube-mtl" src="Models/obj/cube/cube postRasta.mtl"></a-asset-item>
-        </a-assets>
-        <a-marker preset="hiro">
-			<a-entity obj-model="#cube-obj; mtl: #cube-mtl" scale="0.1 0.1 0.1" position="0 0 0" rotation="180 0 180"></a-entity>
-		</a-marker>
-		<a-marker type="barcode" value="49"> 
+       		<a-asset-item id="cube-obj" src="Models/obj/cube/Cube postRasta.obj"></a-asset-item>
+            <a-asset-item id="cube-mtl" src="Models/obj/cube/Cube postRasta.mtl"></a-asset-item>
+			<img id="test-img" src="Images/flyer1.png">
+       </a-assets>
+
+		<a-marker type="barcode" value="0"> 
             <a-entity obj-model="#cube-obj; mtl: #cube-mtl" scale="0.1 0.1 0.1" position="0 0 0" rotation="180 0 180"></a-entity>
         </a-marker>
-		<a-marker preset="custom" type="pattern" url="/markers/RG-marker.patt"> 
-            <a-entity gltf-model="#RawGardenInfo" scale="0.1 0.1 0.1" position="0 0 0" rotation="180 0 180"></a-entity>
+		<a-marker type="barcode" value="1"> 
+            <a-entity gltf-model="#RawGardenInfo" scale="0.25 0.25 0.25" position="0 0 0" rotation="-90 180 0"></a-entity>
         </a-marker>
-		<a-marker type="barcode" value="0"> 
-            <a-entity gltf-model="#Carl" scale="1 1 1" position="0 0 0" rotation="0 0 0" animation-mixer></a-entity>
+		<a-marker type="barcode" value="3"> 
+            <a-entity gltf-model="#RawGardenBox" scale="0.1 0.1 0.1" position="0 0 0"></a-entity>
         </a-marker>
-		<a-marker type="barcode" value="39"> 
-            <a-entity gltf-model="#Lighter" scale="0.01 0.01 0.01" position="0 0 0" rotation="0 0 0" animation-mixer></a-entity>
+		<a-marker type="barcode" value="2"> 
+            <a-gltf-model src="#Wheezer" scale="1 1 1" position="0 0 0" rotation="0 0 0" animation-mixer></a-gltf-model>
         </a-marker>
-		<a-marker type="barcode" value="50"> 
-            <a-entity gltf-model="#CJ" scale="0.1 0.1 0.1" position="0 0 0" rotation="0 0 0" animation-mixer></a-entity>
+		<a-marker type="barcode" value="8">
+            <a-gltf-model src="#Lighter" scale="0.05 0.05 0.05" position="0 0 0" rotation="180 0 0" animation-mixer></a-gltf-model>
         </a-marker>
-        
-		<a-entity light="type:directional; castShadow:true;" position="1 1 1"></a-entity>
-		<a-entity camera></a-entity>
+        <a-marker type="barcode" value="4"> 
+            <a-image src="#test-img" scale=".5 .5 .5" position="0 0 0" rotation="-90 0 0" width="2" height="3"></a-image>
+        </a-marker>
+		<a-entity><a-camera position="0 0 0"></a-camera></a-entity>
 	</a-scene>
 </body>
 </html>
