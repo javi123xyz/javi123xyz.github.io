@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+		<meta charset="utf-8">
+		<title> Javier Solis - Personal Portfolio </title>
+		<meta name="keywords" content="HTML, CSS, Personal Portfolio, Javier Solis, Design, Eternal Oblivion, Flamez">
+		<link href="../../css/port.css" rel="stylesheet" type="text/css"/>
+		<meta name="description" content="Javier Solis - personal creative portfolio">
+		<meta name="author" content="Javier Solis">
+		<meta name="viewport" content="width=1440">
+		<script src="https://cdn.jsdelivr.net/gh/aframevr/aframe@1c2407b26c61958baa93967b5412487cd94b290b/dist/aframe-master.min.js"></script>
+		<script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
+		<script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
+</head>
+<body style="margin: 0px; overflow: hidden;">
+<!--<div class="arjs-loader">
+		<div>Loading, please wait...</div>
+	</div> -->
+	<a-scene embedded vr-mode-ui="enabled: false" arjs="sourceType: webcam; sourceWidth:1333; sourceHeight:1000; displayWidth: 1333; displayHeight: 1000; 
+	debugUIEnabled: true; detectionMode: mono_and_matrix; matrixCodeType: 3x3;" stats>
+		<!--Preloads all assets to be used in scene-->
+		<a-assets timeout="10000">
+			<a-asset-item id="RawGardenBox" src="Models/rGbox2GLTF.gltf"></a-asset-item>
+			<a-asset-item id="RawGardenInfo" src="Models/RawGardenInfo.gltf"></a-asset-item>
+			<a-asset-item id="CJ" src="Models/CJDancing.gltf"></a-asset-item>
+			<a-asset-item id="Lighter" src="Models/AnimatedLighter.gltf"></a-asset-item>
+      		<a-asset-item id="Roots" src="Models/TRB24.gltf"></a-asset-item>
+			<img id="test-img" src="Images/flyer1.png">
+       </a-assets>
+        <a-marker type="barcode" value="0">  
+           <a-entity gltf-model="Roots" scale="0.02 0.02 0.02"></a-entity>
+       </a-marker>
+       <a-marker type="barcode" value="1">  
+           <a-entity gltf-model="url(Models/TRB5.glb)" scale="0.0025 0.0025 0.0025" position="0 0 0" rotation="0 -45 0"></a-entity>
+       </a-marker>
+		<a-marker type="barcode" value="2"> 
+            <a-entity gltf-model="#RawGardenInfo" scale="0.0025 0.0025 0.0025" position="0 0 0" rotation="90 180 0"></a-entity>
+        </a-marker>
+		<a-marker type="barcode" value="3"> 
+            <a-entity gltf-model="#RawGardenBox" scale="0.1 0.1 0.1" position="0 0 0"></a-entity>
+        </a-marker>
+		<a-marker type="barcode" value="2"> 
+            <a-gltf-model src="#CJ" scale=".1 .1 .1" position="0 0 0" rotation="0 0 0" animation-mixer></a-gltf-model>
+        </a-marker>
+        <!--<a-marker type="barcode" value="4"> 
+            <a-image src="#test-img" scale=".75 .75 .75" position="0 0 0" rotation="-90 0 0" width="2" height="3"></a-image>
+        </a-marker> -->
+		<a-entity><a-camera position="0 0 0"></a-camera></a-entity>
+	</a-scene>
+</body>
+</html>
