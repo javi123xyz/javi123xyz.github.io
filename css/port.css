@@ -5,8 +5,9 @@
 }
 
 body {
-	 background: #23074d;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(240deg, #cc5333, #23074d);
+	background-color: #06a682;
+	/*background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(37,145,251,0.98) 0.1%, rgba(0,7,128,1) 99.8% );
+	/*background: -webkit-linear-gradient(240deg, #cc5333, #23074d);
 	background: -o-linear-gradient(240deg, #cc5333, #23074d);
 	background: linear-gradient(330deg, #cc5333, #23074d);
 	/*background-image: url('../IMAGES/Icons/dark-back.png'); */
@@ -300,26 +301,26 @@ a:visited {
 	font-size: 2.0em;
 	padding: 1em;
 	margin: 1em auto;
-	font-family:'Open Sans' , Verdana, Geneva, sans-serif;
+	font-family: 'Poppins', 'Raleway', sans-serif;
 	}
 
 .written, .visual, .audio {
-	color: darkred;
+	color: whitesmoke;
 	background: #44a08d; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #44a08d, #093637); /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(60deg, #44a08d, #093637); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(60deg, #44a08d, #093637); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	max-height: 33%;
 	height: auto;
 	width: 100%;
-	font-family: Verdana, Geneva, sans-serif;
-	font-size: 75%;
+	font-family: 'Poppins', 'Raleway', sans-serif;
+	font-size: 100%;
 	text-align: center;
 	padding: .5em;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: fill;
 	opacity: 1;
-	transition: all .5s ease-in-out;
+	transition: all .75s ease-in-out;
 	border: .25em ridge #ffffff;
 	}
 
@@ -449,12 +450,16 @@ a:visited {
 }
 
 
+.text > h1 {
+	font-family: Cooper Black, Century Gothic;
+}
 h1 {
-	font-family: "Cooper Black", 'Lobster', cursive;
 	transition: all 1.0s ease-in-out;
-	text-shadow: 2px 2px 3px red;
+	text-shadow: 2px 2px 3px #004582;
 	font-size: 3.25em;
+	font-family: 'Poppins', 'Raleway', sans-serif;
 	color: antiquewhite;
+	
 }
 /*animations */
 @keyframes marquee {
@@ -584,18 +589,18 @@ h1 {
 
 /* BUTTON STYLING */ 
 .button {
-	background-color: #f72359;
+	background-color: #ff5e54;
 	color: whitesmoke;
 }
 
 .button2 {
-	background-color: midnightblue;
-    color: goldenrod;
+	background-color: #ffff73;
+    color: midnightblue;
 }
 
 .button3{
-	background-color: midnightblue;
-    color: goldenrod;
+	background-color: #ffff73;
+    color: midnightblue;
 	position: relative;
 	display: block;
     padding: .5em;
@@ -875,8 +880,8 @@ span {
 
 .collapsible {
 	background: #2C3E50;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #4CA1AF, #2C3E50);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #4CA1AF, #2C3E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: -webkit-linear-gradient(down, #4CA1AF, #2C3E50);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(down, #4CA1AF, #2C3E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	color: lightgoldenrodyellow;
 	text-shadow: 1px 2px 4px black;
 	background-blend-mode: color-dodge;
@@ -898,8 +903,8 @@ background: linear-gradient(to right, #4CA1AF, #2C3E50); /* W3C, IE 10+/ Edge, F
 
 .collapsible:hover {
     background: #2C3E50;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #4CA1AF, #2C3E50);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #4CA1AF, #2C3E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: -webkit-linear-gradient(down, #4CA1AF, #2C3E50);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(90, #4CA1AF, #2C3E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	transition: all .5s ease-in-out;
 	color: black;
 	text-shadow: 0 1px 0 #c4c4c4,
@@ -992,7 +997,7 @@ background: linear-gradient(to right, #4CA1AF, #2C3E50); /* W3C, IE 10+/ Edge, F
 	color: black;
 	border: 10px inset;
 	background-clip: content-box; 
-  border-image-source: linear-gradient(45deg, rgb(0,143,104), rgb(250,224,66));
+  border-color: #005645;
   border-image-slice: 1;
 	font-size: 1.2em;
 	font-family: Segoe, Segoe UI, DejaVu Sans, Trebuchet MS, Verdana," sans-serif";
@@ -1002,7 +1007,7 @@ background: linear-gradient(to right, #4CA1AF, #2C3E50); /* W3C, IE 10+/ Edge, F
 	-webkit-transform: perspective(500px);
 	transform: perspective(500px);
 	transition: all .75s ease-in-out;
-	background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+	background: linear-gradient(60deg, #30cfd0, #330867);
 	animation: animatedgradient 20s ease alternate infinite;
 	background-size: 300% 300%;
 }
@@ -1134,17 +1139,17 @@ p.bigSmall {
 .introText {
 	display: inline-block;
 	width: auto;
-	max-width: 100%; 
+	max-width: 75%; 
 	height: auto;
 	text-align: center;
-	padding: 20px;
-	margin: 20px auto;
-	background: linear-gradient(to bottom right, #1e3345, #204d74, #337ab7, #77aaff, #507B9E);
-	color: #F5D573;
+	padding: 1.5em;
+	margin: 1.5em auto;
+	background: #bf5369;
+	color: white;
 	font-size: 1.2em;
 	border-radius: 10px;
-	-webkit-box-shadow: 3px 3px 5px rgba(0,0, 0, 0.4);
-	box-shadow: 3px 3px 5px rgba(0,0, 0, 0.4);
+	-webkit-box-shadow: .25em .25em .5em rgba(0,0, 0, 0.4);
+	box-shadow: .25em .25em .5em rgba(0,0, 0, 0.4);
 }
 
 .innerWindow {
@@ -1335,9 +1340,10 @@ p.bigSmall {
 }
 
 
-.blog > h2, h3, h4 {
-	font-family: Baskerville, Palatino Linotype, Palatino, Century Schoolbook L, Times New Roman, serif;
+.blog > h1, h2, h3, h4 {
+	font-family: 'Poppins', 'Raleway', sans-serif;
 	text-shadow: 2px 2px 3px black;
+	margin: .23em auto;
 	color: antiquewhite;
 }
 
