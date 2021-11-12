@@ -584,43 +584,8 @@ h1 {
 }
 
 /* BUTTON STYLING */ 
-.button {
-	background-color: #ff5e54;
-	color: whitesmoke;
-}
-
-.button2 {
-	background-color: #ffff73;
-    color: midnightblue;
-}
-
-.button3{
-	background-color: #ffff73;
-    color: midnightblue;
+.button, .button2, .button3 {
 	position: relative;
-	display: block;
-    padding: .5em;
-	margin: 2em auto;
-    border: none;
-    font-size: 1.25em;
-	font-family: 'Poppins', 'Raleway', sans-serif;
-    cursor: pointer;
-    border-radius: 70px;
-	transform: scale(1.5);
-	transition: all 0.5s linear;
-	text-align: center;
-}
-
-.button3:hover {
-	box-shadow: -.25em .25em .5px rgba(0,0,0,0.25);
-	transform: scale(1.50);
-	display: block;
-	transition: all 0.5s ease-in-out;
-	margin: 2em auto;
-}
-
-.button, .button2 {
-    position: relative;
 	display: inline-flex;
     padding: 1em 1.25em;
 	margin: 1.5em;
@@ -634,17 +599,32 @@ h1 {
 	text-align: center;
 }
 
+.button {
+	background-color: #ff5e54;
+	color: whitesmoke;
+}
+
+.button2 {
+	background-color: #ffff73;
+    color: midnightblue;
+}
+
+.button3{
+	background-color: #ffff73;
+    color: midnightblue;
+}
+
+
 .button * span, .button2 * span {
         position: relative;
         pointer-events: none;
 }
 
-.button:hover, .button2:hover {
+.button:hover, .button2:hover, .button3:hover {
 	box-shadow: -.25em .75em .5px rgba(0,0,0,0.25);
 	transform: scale(1.20);
 	transition: all 0.5s ease;
 	margin: 2em;
-	animation: pulse .75s linear 1;
 }
 
 audio:hover, audio:focus, audio:active {
@@ -876,8 +856,6 @@ span {
 
 .collapsible {
 	background: #2C3E50;  /* fallback for old browsers */
-background: -webkit-linear-gradient(down, #4CA1AF, #2C3E50);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(down, #4CA1AF, #2C3E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	color: lightgoldenrodyellow;
 	text-shadow: 1px 2px 4px black;
 	background-blend-mode: color-dodge;
@@ -896,14 +874,11 @@ background: linear-gradient(down, #4CA1AF, #2C3E50); /* W3C, IE 10+/ Edge, Firef
 	border-radius: 2.5%;
 	word-break: keep-all;
 	transition: all .5s ease-in-out;
-}
+}	
 
 .collapsible:hover {
-    background: #2C3E50;  /* fallback for old browsers */
-background: -webkit-linear-gradient(down, #4CA1AF, #2C3E50);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(90, #4CA1AF, #2C3E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-	transition: all .5s ease-in-out;
-	color: black;
+    background: linear-gradient(0deg, #4CA1AF, #2C3E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	color: slategrey;
 	text-shadow: 0 1px 0 #c4c4c4,
                0 2px 0 #c9c9c9,
                0 3px 0 #bbb,
@@ -916,9 +891,9 @@ background: linear-gradient(90, #4CA1AF, #2C3E50); /* W3C, IE 10+/ Edge, Firefox
                0 5px 10px rgba(0,0,0,.25),
                0 10px 10px rgba(0,0,0,.2),
                0 20px 20px rgba(0,0,0,.15);
-	box-shadow: -5px 10px 5px grey;
+	box-shadow: -.125em .175em .5px rgba(0,0,0,0.25);
 	transform: scale(1.05);
-	animation: fadeIn linear infinite;
+	transition: all .5s ease-in-out;
 	
 }
 
