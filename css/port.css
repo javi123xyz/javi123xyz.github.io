@@ -307,13 +307,14 @@ h1 {
 
 .foot {
 	display: flex;
-	justify-content: center;
-	align-items: center;
-	gap: 1em;
-	width: 70%;
-	margin: 0.5em auto 1.5em;
-	flex-direction: row;
-	flex-wrap: wrap;
+  	justify-content: center;
+  	align-items: center;
+  	flex-wrap: wrap;
+  	gap: .25em;
+  	max-width: 100%;
+  	width: fit-content;
+  	margin: .75em auto;
+  	text-align: center;
 }
 
 @media only screen and (max-width: 768px) {
