@@ -224,10 +224,7 @@ body {
 	  border-radius: 20px;
 	  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 	  overflow: hidden;
-
 	  transition: all 0.3s ease-in-out;
-}
-
 }
 
 h1 {
@@ -426,6 +423,17 @@ h1 {
 		filter: invert(1); 
 		transition: all 1.25s ease-in-out;
 		}
+}
+
+@media screen and (max-width: 768px) {
+	.parallax-window, .parallax-window2, .parallax-window3 {
+    min-height: 250px;
+	height: 100%;
+	margin: auto;
+	background-attachment: fixed;
+	background-position: center;
+	transition: all 1.25s ease-in-out;
+}
 }
 
 .flex-container {
