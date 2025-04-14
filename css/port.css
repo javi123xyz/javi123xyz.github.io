@@ -77,16 +77,16 @@ body {
 	transition: 1s ease;
 }
 
-.uziPic {background-image: url('../3D/assets/Previews/Lil Uzi Textured 1.webp');}
+.uziPic {background-image: url('../3D/assets/Previews/Lil-Uzi-Textured-1.webp');}
 .tommyPic {	background-image: url('../3D/assets/Previews/tommy.webp');}
-.rpgPic {background-image: url('../3D/assets/Previews/rpg final.webp');}
+.rpgPic {background-image: url('../3D/assets/Previews/rpg-final.webp');}
 .gilPic {background-image: url('../3D/assets/Previews/guillotine.webp');}
 .bongPic {background-image: url('../3D/assets/Previews/bong.webp');}
 .sstPic {background-image: url('../3D/assets/Previews/sst.webp');}
 .petrPic {background-image: url('../3D/assets/Previews/petr.webp');}
 .luckyPic {background-image: url('../3D/assets/Previews/lucky.webp');}
-.w10Pic {background-image: url('../3D/assets/Previews/wek 10.webp');}
-.thiccPic {background-image: url('../3D/assets/Previews/thicc gary.webp');}
+.w10Pic {background-image: url('../3D/assets/Previews/wek-10.webp');}
+.thiccPic {background-image: url('../3D/assets/Previews/thicc-gary.webp');}
 
 .uziPic, .gilPic, .rpgPic, .tommyPic, .bongPic, .sstPic, .impPic, .luckyPic, .petrPic, .w10Pic, .thiccPic, .zotPic {
 	background-size: contain;
@@ -208,7 +208,7 @@ body {
 }
 
 .introMenu {
-    background-image: url('../IMAGES/GRAPHICS/Files/Misc/header v4.svg');
+    background-image: url('../IMAGES/GRAPHICS/Files/Misc/header-v4.svg');
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -216,13 +216,18 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 40%;
-    height: auto;
-    max-height: 25vh;
-    text-align: center;
-    padding: 1.5em;
-    margin: 1em auto;
-    overflow: hidden;
+     max-width: 500px;
+	  width: 90%;
+	  padding: 2em 1.5em;
+	  margin: 2em auto;
+	  text-align: center;
+	  border-radius: 20px;
+	  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+	  overflow: hidden;
+
+	  transition: all 0.3s ease-in-out;
+}
+
 }
 
 h1 {
@@ -404,7 +409,6 @@ h1 {
 .parallax-window, .parallax-window2, .parallax-window3 {
     min-height: 400px;
 	height: 100%;
-	width: auto;
 	margin: auto;
 	background-attachment: fixed;
 	background-position: center;
@@ -413,9 +417,9 @@ h1 {
 	transition: all 1.25s ease-in-out;
 }
 
-.parallax-window { background-image: url('../IMAGES/GRAPHICS/Files/Misc/header v4.svg'); }
-.parallax-window2 { background-image: url('../IMAGES/GRAPHICS/Files/eternal oblivion/BURBERRY OBLIVION 2.webp'); }
-.parallax-window3 { background-image: url('../IMAGES/GRAPHICS/Files/eternal oblivion/BURBERRY OBLIVION 3.webp'); }
+.parallax-window { background-image: url('../IMAGES/GRAPHICS/Files/Misc/header-v4.svg'); }
+.parallax-window2 { background-image: url('../IMAGES/GRAPHICS/Files/eternal oblivion/BURBERRY-OBLIVION-2.webp'); }
+.parallax-window3 { background-image: url('../IMAGES/GRAPHICS/Files/eternal oblivion/BURBERRY-OBLIVION-3.webp'); }
 
 @supports (filter: invert()){
 	.parallax-window2:hover{ 
