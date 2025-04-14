@@ -429,7 +429,6 @@ h1 {
 @media screen and (max-width: 768px) {
 	.parallax-window2, .parallax-window3 {
     min-height: 250px;
-	height: 100%;
 	margin: auto;
 	background-attachment: fixed;
 	background-position: center;
@@ -437,6 +436,7 @@ h1 {
 	}
 	.parallax-window {
 		min-height: 450px;
+		height: 100%;
 	}
 }
 
