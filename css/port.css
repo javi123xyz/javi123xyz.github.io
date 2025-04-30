@@ -77,9 +77,9 @@ body {
 	transition: 1s ease;
 }
 
-.uziPic {background-image: url('../3D/assets/Previews/Lil-Uzi-Textured-1.webp');}
+.uziPic {background-image: url('../3D/assets/Previews/uzi.webp');}
 .tommyPic {	background-image: url('../3D/assets/Previews/tommy.webp');}
-.rpgPic {background-image: url('../3D/assets/Previews/rpg-final.webp');}
+.rpgPic {background-image: url('../3D/assets/Previews/rpg.webp');}
 .gilPic {background-image: url('../3D/assets/Previews/guillotine.webp');}
 .bongPic {background-image: url('../3D/assets/Previews/bong.webp');}
 .sstPic {background-image: url('../3D/assets/Previews/sst.webp');}
@@ -374,6 +374,9 @@ h1 {
 	width: 90%;
 	-ms-overflow-style: none;
 	scrollbar-width: none;
+	position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .collapsibleCont2::-webkit-scollbar {
@@ -416,8 +419,8 @@ h1 {
 }
 
 .parallax-window { background-image: url('../IMAGES/GRAPHICS/Files/Misc/header-v4.svg'); }
-.parallax-window2 { background-image: url('../IMAGES/GRAPHICS/Files/eternal oblivion/BURBERRY-OBLIVION-2.webp'); }
-.parallax-window3 { background-image: url('../IMAGES/GRAPHICS/Files/eternal oblivion/BURBERRY-OBLIVION-3.webp'); }
+.parallax-window2 { background-image: url('../IMAGES/GRAPHICS/Files/eternal oblivion/webp/BURBERRY-OBLIVION-2.webp'); }
+.parallax-window3 { background-image: url('../IMAGES/GRAPHICS/Files/eternal oblivion/webp/BURBERRY-OBLIVION-3.webp'); }
 
 @supports (filter: invert()){
 	.parallax-window2:hover{ 
@@ -562,6 +565,18 @@ h1 {
   grid-template-columns: repeat(2, 1fr);
   gap: 1.5em;
   max-width: 1200px;
+	width: 90%;
+  margin: 1.5em auto;
+  padding: .75em;
+  justify-items: center;
+	background-color: #017EA7;
+}
+
+.video-grid2 {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.5em;
+  max-width: 1200px;
   margin: 2em auto;
   padding: 1em;
   justify-items: center;
@@ -576,14 +591,59 @@ h1 {
   transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
-.video-grid video:hover {
+.video-grid2 video {
+	width: 100%;
+	max-width: 800px;
+	height: auto;
+	border-radius: 12px;
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+	transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.video-grid video:hover, .video-grid2 video:hover {
   transform: scale(1.03);
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
 }
 
+
 @media screen and (max-width: 768px) {
-  .video-grid {
+  .video-grid, .video-grid2 {
     grid-template-columns: 1fr;
   }
 }
 
+.content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.content.active {
+  overflow: visible;
+}
+.map-gallery {
+	position: relative;
+	overflow-y: auto;
+	background-color: #017EA7;
+	margin: auto;
+	padding: .5em;
+	max-height: 800px;
+	transition: max-height 0.75s ease-out;
+	text-align: center;
+	width: 90%;
+}
+
+
+.map-images img {
+  display: block;
+  max-width: 80%;
+  margin-bottom: 20px;
+	margin: auto;
+}
+
+.map-images {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
